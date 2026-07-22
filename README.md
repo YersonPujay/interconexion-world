@@ -1,35 +1,39 @@
 # 🌐 Interconexión World
 
+<p align="center">
+  <img src="assets/images/readme/inicio.png" alt="Interconexión World">
+</p>
+
 Sitio web desarrollado como proyecto de una empresa ficticia de servicios de internet. El objetivo fue crear una plataforma moderna donde los usuarios puedan conocer los planes disponibles, consultar la cobertura, resolver dudas frecuentes y registrar reclamos mediante un libro de reclamaciones.
 
----
+<p align="center">
 
-## 🚀 Demo en línea
+<a href="https://interconexion-world.vercel.app">
+<img src="https://img.shields.io/badge/🌐%20Ver%20Demo-0A66C2?style=for-the-badge">
+</a>
 
-🔗 https://interconexion-world.vercel.app
+<a href="https://github.com/YersonPujay/interconexion-world">
+<img src="https://img.shields.io/badge/💻%20Repositorio-181717?style=for-the-badge&logo=github">
+</a>
 
----
-
-## 💻 Repositorio
-
-🔗 https://github.com/YersonPujay/interconexion-world
-
----
-
-## ✨ Funcionalidades
-
-- Página de inicio moderna.
-- Diseño responsive para computadoras, tablets y móviles.
-- Sección "Sobre nosotros".
-- Preguntas frecuentes con buscador y filtros.
-- Consulta de cobertura.
-- Formulario de contacto.
-- Libro de reclamaciones con formulario de varios pasos.
-- Validaciones desarrolladas con JavaScript.
+</p>
 
 ---
 
-## 🛠 Tecnologías utilizadas
+# ✨ Funcionalidades
+
+- ✅ Página de inicio moderna.
+- ✅ Diseño responsive.
+- ✅ Sección "Sobre nosotros".
+- ✅ Preguntas frecuentes con buscador y filtros.
+- ✅ Consulta de cobertura.
+- ✅ Formulario de contacto.
+- ✅ Libro de reclamaciones.
+- ✅ Validaciones desarrolladas con JavaScript.
+
+---
+
+# 🛠 Tecnologías utilizadas
 
 | Tecnología | Uso |
 |------------|-----|
@@ -37,12 +41,24 @@ Sitio web desarrollado como proyecto de una empresa ficticia de servicios de int
 | CSS3 | Diseño y estilos |
 | JavaScript | Funcionalidad e interactividad |
 | Git | Control de versiones |
-| GitHub | Repositorio del proyecto |
-| Vercel | Despliegue del sitio |
+| GitHub | Repositorio |
+| Vercel | Despliegue |
 
 ---
 
-## 📁 Estructura del proyecto
+# 📸 Capturas del proyecto
+
+| Página principal | Sobre nosotros |
+|------------------|----------------|
+| ![](assets/images/readme/inicio.png) | ![](assets/images/readme/nosotros.png) |
+
+| Preguntas frecuentes | Libro de reclamaciones |
+|----------------------|------------------------|
+| ![](assets/images/readme/preguntas.png) | ![](assets/images/readme/reclamaciones.png) |
+
+---
+
+# 📁 Estructura del proyecto
 
 ```text
 interconexion-world/
@@ -60,15 +76,15 @@ interconexion-world/
 
 ---
 
-## 🎯 Objetivo del proyecto
+# 🎯 Objetivo
 
-Desarrollar un sitio web moderno y funcional que represente a una empresa proveedora de internet, aplicando buenas prácticas de desarrollo web, diseño responsive y organización del código.
+Desarrollar un sitio web moderno y funcional para representar a una empresa proveedora de internet, aplicando buenas prácticas de desarrollo web, diseño responsive y organización del código.
 
 ---
 
-## 📱 Responsive
+# 📱 Responsive
 
-El proyecto fue diseñado para adaptarse correctamente a diferentes tamaños de pantalla:
+Compatible con:
 
 - 💻 Computadoras
 - 📱 Celulares
@@ -76,13 +92,15 @@ El proyecto fue diseñado para adaptarse correctamente a diferentes tamaños de 
 
 ---
 
-## 🌎 Estado del proyecto
+# 🌎 Estado del proyecto
 
-🟢 Finalizado y desplegado en Vercel.
+🟢 **Activo**
+
+El proyecto se encuentra desplegado en Vercel y disponible para su visualización.
 
 ---
 
-## 👨‍💻 Autor
+# 👨‍💻 Autor
 
 **Yerson Pujay**
 
@@ -90,5 +108,3 @@ El proyecto fue diseñado para adaptarse correctamente a diferentes tamaños de 
 - LinkedIn: https://www.linkedin.com/in/yerson-pujay-0919bb247/
 
 ---
-
-⭐ Si te gustó este proyecto, puedes darle una estrella al repositorio.
