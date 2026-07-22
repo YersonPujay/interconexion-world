@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preguntas frecuentes de Interconexión World.">
+    <title>Preguntas frecuentes | Interconexión World</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/preguntas.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         ENCABEZADO
+         ===================================================== -->
+    <header class="header" id="inicio">
+        <div class="header-container">
+
+            <a href="index.html" class="brand" aria-label="Ir al inicio">
+                <img
+                    src="assets/images/logo.png"
+                    alt="Interconexión World"
+                    class="brand-logo"
+                >
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="nav">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Sobre nosotros</a>
+                <a href="preguntas.html" class="active">Preguntas frecuentes</a>
+                <a href="reclamaciones.html">Reclamaciones</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <a href="#" class="header-action admin-action">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Área Administrativa</span>
+                </a>
+
+                <a href="index.html#contacto" class="header-action contact-action">
+                    <i class="fa-regular fa-message"></i>
+                    <span>Contáctanos</span>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =================================================
+             PORTADA
+             ================================================= -->
+        <section class="faq-hero">
+
+            <div class="faq-hero-content">
+
+                <div class="breadcrumb">
+
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                    <span>Preguntas frecuentes</span>
+
+                </div>
+
+                <span class="hero-label">Centro de ayuda</span>
+
+                <h1>
+                    Resolvemos tus
+                    <span>preguntas frecuentes</span>
+                </h1>
+
+                <p>
+                    Encuentra respuestas rápidas sobre nuestros planes,
+                    instalación, pagos, soporte técnico y atención al cliente.
+                </p>
+
+            </div>
+
+
+            <div class="faq-hero-icon" aria-hidden="true">
+                <i class="fa-regular fa-circle-question"></i>
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PREGUNTAS FRECUENTES
+             ================================================= -->
+        <section class="faq-section">
+
+            <div class="faq-container">
+
+                <!-- Buscador -->
+                <div class="faq-search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="faqSearch"
+                        placeholder="Busca una pregunta..."
+                        aria-label="Buscar una pregunta frecuente"
+                    >
+
+                    <button
+                        type="button"
+                        id="clearSearch"
+                        aria-label="Limpiar búsqueda"
+                        hidden
+                    >
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Categorías -->
+                <div class="faq-categories" role="tablist">
+
+                    <button
+                        type="button"
+                        class="faq-category active"
+                        data-category="all"
+                    >
+                        <i class="fa-solid fa-layer-group"></i>
+                        Todas
+                    </button>
+
+                    <button
+                        type="button"
+                        class="faq-category"
+                        data-category="planes"
+                    >
+                        <i class="fa-solid fa-wifi"></i>
+                        Planes
+                    </button>
+
+                    <button
+                        type="button"
+                        class="faq-category"
+                        data-category="instalacion"
+                    >
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Instalación
+                    </button>
+
+                    <button
+                        type="button"
+                        class="faq-category"
+                        data-category="pagos"
+                    >
+                        <i class="fa-regular fa-credit-card"></i>
+                        Pagos
+                    </button>
+
+                    <button
+                        type="button"
+                        class="faq-category"
+                        data-category="soporte"
+                    >
+                        <i class="fa-solid fa-headset"></i>
+                        Soporte
+                    </button>
+
+                </div>
+
+
+                <!-- Lista de preguntas -->
+                <div class="faq-list" id="faqList">
+
+                    <!-- PLANES -->
+                    <article class="faq-item" data-category="planes">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-wifi"></i>
+                                ¿Cómo puedo contratar un plan?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Puedes elegir uno de nuestros planes desde la
+                                página principal y hacer clic en
+                                <strong>Solicitar plan</strong>. También puedes
+                                comunicarte mediante el formulario de contacto,
+                                teléfono o WhatsApp.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item" data-category="planes">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                ¿Puedo cambiarme a otro plan?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Sí. Puedes solicitar un cambio de plan de
+                                acuerdo con la cobertura y disponibilidad
+                                técnica de tu zona.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item" data-category="planes">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-gamepad"></i>
+                                ¿Qué diferencia existe entre un plan hogar y uno gamer?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Los planes gamer están orientados a una menor
+                                latencia, mayor estabilidad y mejor rendimiento
+                                para videojuegos, transmisiones y múltiples
+                                dispositivos conectados.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <!-- INSTALACIÓN -->
+                    <article class="faq-item" data-category="instalacion">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-calendar-check"></i>
+                                ¿Cuánto demora la instalación?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                El tiempo depende de la disponibilidad técnica
+                                y la zona. Nuestro equipo coordinará contigo la
+                                fecha y el horario de instalación.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item" data-category="instalacion">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-house-signal"></i>
+                                ¿La instalación incluye router?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Los equipos incluidos dependen del plan
+                                contratado. Antes de confirmar la instalación,
+                                un asesor te indicará todos los componentes
+                                incluidos.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item" data-category="instalacion">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                                ¿Cómo sé si tienen cobertura en mi zona?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                En la página principal encontrarás el apartado
+                                <strong>Verifica tu cobertura</strong>. Allí
+                                podrás seleccionar tu distrito e ingresar tu
+                                dirección.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <!-- PAGOS -->
+                    <article class="faq-item" data-category="pagos">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-regular fa-credit-card"></i>
+                                ¿Qué medios de pago aceptan?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Los medios de pago disponibles serán informados
+                                por nuestros canales de atención y pueden
+                                incluir transferencias, pagos digitales y
+                                entidades autorizadas.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item" data-category="pagos">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-receipt"></i>
+                                ¿Cómo obtengo mi comprobante de pago?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                El comprobante será enviado al correo
+                                registrado o podrá solicitarse mediante
+                                nuestros canales de atención.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item" data-category="pagos">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                ¿Qué sucede si pago después de la fecha de vencimiento?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Pueden aplicarse restricciones al servicio de
+                                acuerdo con las condiciones del contrato. Te
+                                recomendamos comunicarte con atención al
+                                cliente para revisar tu caso.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <!-- SOPORTE -->
+                    <article class="faq-item" data-category="soporte">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                                ¿Qué hago si mi internet presenta fallas?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Reinicia el router y verifica sus conexiones.
+                                Si el problema continúa, comunícate con soporte
+                                técnico mediante teléfono, WhatsApp o el
+                                formulario de contacto.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item" data-category="soporte">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-lock"></i>
+                                ¿Cómo puedo cambiar la contraseña de mi Wi-Fi?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Puedes solicitar ayuda a nuestro equipo de
+                                soporte técnico. Te orientaremos para realizar
+                                el cambio de forma segura.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="faq-item" data-category="soporte">
+
+                        <button
+                            type="button"
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                <i class="fa-solid fa-book-open"></i>
+                                ¿Dónde puedo registrar un reclamo?
+                            </span>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div class="faq-answer">
+                            <p>
+                                Puedes registrar tu solicitud desde nuestra
+                                página del
+                                <a href="reclamaciones.html">
+                                    Libro de reclamaciones
+                                </a>.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Mensaje sin resultados -->
+                <div class="no-results" id="noResults" hidden>
+                    <i class="fa-regular fa-face-frown"></i>
+                    <h2>No encontramos esa pregunta</h2>
+                    <p>
+                        Prueba con otra palabra o comunícate con nuestro equipo.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             BLOQUE DE AYUDA
+             ================================================= -->
+        <section class="faq-help">
+
+            <div class="faq-help-card">
+
+                <div>
+
+                    <span>
+                        <i class="fa-solid fa-headset"></i>
+                    </span>
+
+                    <div>
+                        <h2>¿No encontraste la respuesta que buscabas?</h2>
+
+                        <p>
+                            Nuestro equipo puede ayudarte con información,
+                            soporte técnico o contratación.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-help-actions">
+
+                    <a href="index.html#contacto">
+                        <i class="fa-regular fa-message"></i>
+                        Contáctanos
+                    </a>
+
+                    <a href="reclamaciones.html" class="secondary-help">
+                        <i class="fa-solid fa-book-open"></i>
+                        Libro de reclamaciones
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand-row">
+
+                <a href="index.html" class="footer-brand" aria-label="Ir al inicio">
+                    <img
+                        src="assets/images/logo.png"
+                        alt="Interconexión World"
+                        class="footer-logo"
+                    >
+                </a>
+
+                <p>
+                    Internet rápido, estable y confiable para tu hogar.
+                </p>
+
+            </div>
+
+
+            <div class="footer-columns">
+
+                <!-- Información de abonados -->
+                <section class="footer-column">
+
+                    <div class="footer-column-title">
+                        <span>
+                            <i class="fa-regular fa-user"></i>
+                        </span>
+
+                        <h3>Información de abonados</h3>
+                    </div>
+
+                    <nav class="footer-links">
+
+                        <a href="preguntas.html">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            <span>¿Cómo contratar?</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span>Condiciones de uso</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <span>Medios de pago</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-wifi"></i>
+                            <span>Política de uso de internet</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-cookie-bite"></i>
+                            <span>Política de cookies</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </nav>
+
+                </section>
+
+
+                <!-- Tus derechos -->
+                <section class="footer-column">
+
+                    <div class="footer-column-title">
+                        <span>
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </span>
+
+                        <h3>Tus derechos</h3>
+                    </div>
+
+                    <nav class="footer-links">
+
+                        <a href="#">
+                            <i class="fa-solid fa-user-shield"></i>
+                            <span>Política de privacidad</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span>Términos y condiciones</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="reclamaciones.html">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Libro de reclamaciones</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <span>Canal de denuncias</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <span>Devolución por interrupciones</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </nav>
+
+                </section>
+
+
+                <!-- Atención y empresa -->
+                <section class="footer-column">
+
+                    <div class="footer-column-title">
+                        <span>
+                            <i class="fa-solid fa-headset"></i>
+                        </span>
+
+                        <h3>Atención y empresa</h3>
+                    </div>
+
+                    <div class="footer-company-data">
+
+                        <a href="tel:+5111234567">
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>
+                                <strong>Teléfono:</strong>
+                                (01) 123 4567
+                            </span>
+                        </a>
+
+                        <a href="mailto:info@interconexionworld.com">
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <span>
+                                <strong>Correo:</strong>
+                                info@interconexionworld.com
+                            </span>
+                        </a>
+
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>
+                                <strong>Dirección:</strong>
+                                Av. Conexión 123, Lima – Perú
+                            </span>
+                        </div>
+
+                        <div>
+                            <i class="fa-regular fa-clock"></i>
+
+                            <span>
+                                <strong>Horario:</strong>
+                                Lun. – Sáb.: 8:00 a.m. – 8:00 p.m.
+                            </span>
+                        </div>
+
+                        <a href="nosotros.html">
+                            <i class="fa-regular fa-building"></i>
+                            <span>Sobre nosotros</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- Navegación inferior -->
+            <div class="footer-navigation">
+
+                <nav class="footer-menu">
+
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Inicio
+                    </a>
+
+                    <a href="nosotros.html">
+                        <i class="fa-regular fa-user"></i>
+                        Sobre nosotros
+                    </a>
+
+                    <a href="preguntas.html">
+                        <i class="fa-regular fa-circle-question"></i>
+                        Preguntas frecuentes
+                    </a>
+
+                    <a href="reclamaciones.html">
+                        <i class="fa-solid fa-book-open"></i>
+                        Libro de reclamaciones
+                    </a>
+
+                </nav>
+
+
+                <div class="footer-social">
+
+                    <span>Síguenos:</span>
+
+                    <div>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>© 2026 Interconexión World</p>
+            <span></span>
+            <p>Todos los derechos reservados</p>
+        </div>
+
+    </footer>
+
+
+    <script src="assets/js/preguntas.js" defer></script>
+
+</body>
+</html>

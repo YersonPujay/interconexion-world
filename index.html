@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Planes de internet para hogares de Interconexión World."
+    >
+    <title>Interconexión World</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="assets/css/home.css">
+    <script src="assets/js/home.js" defer></script>
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <div class="header-container">
+            <a href="#inicio" class="brand" aria-label="Volver al inicio">
+                <img
+                    src="assets/images/logo.png"
+                    alt="Interconexión World"
+                    class="brand-logo"
+                >
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-controls="nav"
+                aria-expanded="false"
+            >
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <nav class="nav" id="nav" aria-label="Navegación principal">
+                <a href="#inicio" class="active">Inicio</a>
+                <a href="nosotros.html">Sobre nosotros</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+                <a href="reclamaciones.html">Reclamaciones</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="header-action admin-action">
+                    <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                    <span>Área Administrativa</span>
+                </a>
+
+                <a href="#contacto" class="header-action contact-action">
+                    <i class="fa-regular fa-message" aria-hidden="true"></i>
+                    <span>Contáctanos</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="portada">
+            <div class="hero-content">
+                <span class="tag">Internet rápido y estable</span>
+
+                <h1>
+                    Internet de alta velocidad
+                    <span>para lo que más te importa</span>
+                </h1>
+
+                <p>
+                    Conectividad estable, atención cercana y planes diseñados
+                    para que disfrutes cada momento en tu hogar.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#planes" class="btn-primary">
+                        <i class="fa-solid fa-wifi" aria-hidden="true"></i>
+                        Conoce nuestros planes
+                    </a>
+
+                    <a href="#ubicacion" class="btn-secondary">
+                        Ver ubicación
+                    </a>
+                </div>
+
+                <div class="hero-benefits">
+                    <div class="benefit-item">
+                        <span>
+                            <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <strong>Internet rápido</strong>
+                            <small>Conexión estable</small>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <strong>Seguridad</strong>
+                            <small>Red confiable</small>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <strong>Soporte técnico</strong>
+                            <small>Atención cercana</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="signal-ring ring-one"></div>
+                <div class="signal-ring ring-two"></div>
+                <div class="signal-ring ring-three"></div>
+
+                <div class="wifi-core">
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+
+                <div class="floating-card card-streaming">
+                    <i class="fa-solid fa-tv"></i>
+                    <span>Streaming sin cortes</span>
+                </div>
+
+                <div class="floating-card card-gaming">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Gaming con baja latencia</span>
+                </div>
+
+                <div class="floating-card card-home">
+                    <i class="fa-solid fa-house-signal"></i>
+                    <span>Todo tu hogar conectado</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="planes" id="planes">
+            <div class="section-heading plans-heading">
+                <span>Nuestros planes</span>
+                <h2>Elige el plan ideal para tu hogar</h2>
+                <p>
+                    Selecciona una categoría y descubre el plan que mejor
+                    se adapte a tus necesidades.
+                </p>
+            </div>
+
+            <div class="plan-tabs" role="tablist" aria-label="Categorías de planes">
+                <button
+                    class="plan-tab active"
+                    id="tabFibra"
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    data-category="fibra"
+                >
+                    <i class="fa-solid fa-wifi" aria-hidden="true"></i>
+                    Planes Fibra Óptica
+                </button>
+
+                <button
+                    class="plan-tab"
+                    id="tabGamer"
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    data-category="gamer"
+                >
+                    <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+                    Planes Gamer / Streaming
+                </button>
+            </div>
+
+            <div class="plans-slider">
+                <button
+                    class="slider-btn prev"
+                    id="prevPlan"
+                    type="button"
+                    aria-label="Plan anterior"
+                >
+                    <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                </button>
+
+                <div class="plans-window">
+                    <div class="plans-track" id="plansTrack"></div>
+                </div>
+
+                <button
+                    class="slider-btn next"
+                    id="nextPlan"
+                    type="button"
+                    aria-label="Plan siguiente"
+                >
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div
+                class="slider-dots"
+                id="sliderDots"
+                aria-label="Indicadores del carrusel"
+            ></div>
+        </section>
+
+        <section class="experiences-section">
+            <div class="experiences-heading">
+                <span>Una conexión para cada momento</span>
+                <h2>Más que internet, una mejor experiencia en tu hogar</h2>
+                <p>
+                    Descubre cómo nuestra conexión mejora tu entretenimiento,
+                    trabajo, estudios y comunicación diaria.
+                </p>
+            </div>
+
+            <div class="experiences-grid">
+                <article class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-tv" aria-hidden="true"></i>
+                    </div>
+                    <h3>Streaming sin cortes</h3>
+                    <p>
+                        Disfruta series, películas y televisión en alta calidad
+                        con una conexión estable.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+                    </div>
+                    <h3>Gaming con baja latencia</h3>
+                    <p>
+                        Juega en línea con mayor estabilidad, rapidez de respuesta
+                        y menos interrupciones.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-laptop-file" aria-hidden="true"></i>
+                    </div>
+                    <h3>Trabajo y estudio</h3>
+                    <p>
+                        Realiza videollamadas, clases virtuales y actividades
+                        diarias con una conexión confiable.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                    </div>
+                    <h3>Soporte técnico</h3>
+                    <p>
+                        Recibe atención rápida y cercana cuando necesites ayuda
+                        con tu servicio.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="coverage-section" id="cobertura">
+            <div class="coverage-heading">
+                <span>Cobertura de nuestro servicio</span>
+                <h2>Verifica la cobertura en tu zona</h2>
+                <p>
+                    Selecciona tu distrito e ingresa tu dirección para conocer
+                    si nuestro servicio se encuentra disponible.
+                </p>
+            </div>
+
+            <div class="coverage-layout">
+                <article class="coverage-form-card">
+                    <div class="coverage-card-heading">
+                        <span class="coverage-heading-icon">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <small>Consulta rápida</small>
+                            <h3>Ingresa tus datos</h3>
+                        </div>
+                    </div>
+
+                    <form id="coverageForm">
+                        <label for="coverageDistrict">Distrito</label>
+                        <select id="coverageDistrict" name="distrito" required>
+                            <option value="">Selecciona tu distrito</option>
+                            <option value="Ancón">Ancón</option>
+                            <option value="Ate">Ate</option>
+                            <option value="Barranco">Barranco</option>
+                            <option value="Breña">Breña</option>
+                            <option value="Carabayllo">Carabayllo</option>
+                            <option value="Chaclacayo">Chaclacayo</option>
+                            <option value="Chorrillos">Chorrillos</option>
+                            <option value="Cieneguilla">Cieneguilla</option>
+                            <option value="Comas">Comas</option>
+                            <option value="El Agustino">El Agustino</option>
+                            <option value="Independencia">Independencia</option>
+                            <option value="Jesús María">Jesús María</option>
+                            <option value="La Molina">La Molina</option>
+                            <option value="La Victoria">La Victoria</option>
+                            <option value="Lima">Lima Cercado</option>
+                            <option value="Lince">Lince</option>
+                            <option value="Los Olivos">Los Olivos</option>
+                            <option value="Lurigancho-Chosica">Lurigancho-Chosica</option>
+                            <option value="Lurín">Lurín</option>
+                            <option value="Magdalena del Mar">Magdalena del Mar</option>
+                            <option value="Miraflores">Miraflores</option>
+                            <option value="Pachacámac">Pachacámac</option>
+                            <option value="Pucusana">Pucusana</option>
+                            <option value="Pueblo Libre">Pueblo Libre</option>
+                            <option value="Puente Piedra">Puente Piedra</option>
+                            <option value="Punta Hermosa">Punta Hermosa</option>
+                            <option value="Punta Negra">Punta Negra</option>
+                            <option value="Rímac">Rímac</option>
+                            <option value="San Bartolo">San Bartolo</option>
+                            <option value="San Borja">San Borja</option>
+                            <option value="San Isidro">San Isidro</option>
+                            <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                            <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="San Martín de Porres">San Martín de Porres</option>
+                            <option value="San Miguel">San Miguel</option>
+                            <option value="Santa Anita">Santa Anita</option>
+                            <option value="Santa María del Mar">Santa María del Mar</option>
+                            <option value="Santa Rosa">Santa Rosa</option>
+                            <option value="Santiago de Surco">Santiago de Surco</option>
+                            <option value="Surquillo">Surquillo</option>
+                            <option value="Villa El Salvador">Villa El Salvador</option>
+                            <option value="Villa María del Triunfo">Villa María del Triunfo</option>
+                        </select>
+
+                        <label for="coverageAddress">Dirección</label>
+                        <input
+                            type="text"
+                            id="coverageAddress"
+                            name="direccion"
+                            placeholder="Ejemplo: Av. Universitaria 1234"
+                            autocomplete="street-address"
+                            required
+                        >
+
+                        <label for="coverageReference">
+                            Referencia <span>(opcional)</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="coverageReference"
+                            name="referencia"
+                            placeholder="Ejemplo: cerca de un parque"
+                        >
+
+                        <button type="submit" class="coverage-submit">
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            Verificar cobertura
+                        </button>
+                    </form>
+
+                    <div
+                        class="coverage-result"
+                        id="coverageResult"
+                        aria-live="polite"
+                    ></div>
+                </article>
+
+                <article class="coverage-map-card">
+                    <iframe
+                        id="coverageMap"
+                        title="Mapa de cobertura"
+                        src="https://www.google.com/maps?q=Lima%2C%20Per%C3%BA&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+
+                    <div class="coverage-map-message">
+                        <span>
+                            <i class="fa-solid fa-wifi" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <strong>Consulta tu dirección</strong>
+                            <small>El mapa se actualizará al verificar la cobertura.</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="coverage-zones-card">
+                    <div class="coverage-card-heading">
+                        <span class="coverage-heading-icon">
+                            <i class="fa-solid fa-city" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <small>Cobertura actual</small>
+                            <h3>Zonas de Lima Norte</h3>
+                        </div>
+                    </div>
+
+                    <p class="coverage-zones-description">
+                        Actualmente contamos con disponibilidad en los siguientes distritos:
+                    </p>
+
+                    <ul class="coverage-zones-list">
+                        <li><span>Ancón</span><strong>Disponible</strong></li>
+                        <li><span>Carabayllo</span><strong>Disponible</strong></li>
+                        <li><span>Comas</span><strong>Disponible</strong></li>
+                        <li><span>Independencia</span><strong>Disponible</strong></li>
+                        <li><span>Los Olivos</span><strong>Disponible</strong></li>
+                        <li><span>Puente Piedra</span><strong>Disponible</strong></li>
+                        <li><span>San Martín de Porres</span><strong>Disponible</strong></li>
+                        <li><span>Santa Rosa</span><strong>Disponible</strong></li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="coverage-help">
+                <div>
+                    <span>
+                        <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                    </span>
+                    <div>
+                        <strong>¿Necesitas confirmar tu cobertura?</strong>
+                        <p>Nuestro equipo puede ayudarte a validar tu dirección.</p>
+                    </div>
+                </div>
+
+                <a href="#contacto">
+                    <i class="fa-regular fa-message" aria-hidden="true"></i>
+                    Hablar con un asesor
+                </a>
+            </div>
+        </section>
+
+        <section class="location-contact-section">
+            <div class="location-contact-layout">
+                <article class="location-main-card" id="ubicacion">
+                    <div class="contact-section-heading">
+                        <span class="contact-section-icon">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        </span>
+                        <div>
+                            <small>Encuéntranos</small>
+                            <h2>Nuestra ubicación</h2>
+                        </div>
+                    </div>
+
+                    <p class="location-intro">
+                        Visítanos para recibir información sobre planes,
+                        cobertura y soporte técnico.
+                    </p>
+
+                    <ul class="location-information">
+                        <li>
+                            <i class="fa-solid fa-building" aria-hidden="true"></i>
+                            <span><strong>Interconexión World S.A.C.</strong></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <span>Av. Conexión 123, Lima – Perú</span>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            <span>Lunes a sábado: 8:00 a.m. – 8:00 p.m.</span>
+                        </li>
+                    </ul>
+
+                    <a
+                        href="https://www.google.com/maps?q=Lima%2C%20Per%C3%BA"
+                        class="location-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-solid fa-route" aria-hidden="true"></i>
+                        Cómo llegar
+                    </a>
+
+                    <div class="location-map">
+                        <div class="location-map-grid"></div>
+                        <div class="location-map-pin">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        </div>
+                        <strong>Aquí se integrará Google Maps</strong>
+                    </div>
+                </article>
+
+                <article class="information-form-card" id="contacto">
+                    <div class="information-form-heading">
+                        <span>Contacto</span>
+                        <h2>Solicita información</h2>
+                        <p>
+                            Déjanos tus datos y uno de nuestros asesores
+                            se comunicará contigo.
+                        </p>
+                    </div>
+
+                    <form class="information-form" id="contactForm">
+                        <div class="information-form-row">
+                            <div class="form-field">
+                                <label for="contactName">Nombre completo</label>
+                                <input
+                                    type="text"
+                                    id="contactName"
+                                    name="nombre"
+                                    placeholder="Nombre completo"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="contactEmail">Correo electrónico</label>
+                                <input
+                                    type="email"
+                                    id="contactEmail"
+                                    name="correo"
+                                    placeholder="Correo electrónico"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="information-form-row">
+                            <div class="form-field">
+                                <label for="contactPhone">Celular</label>
+                                <input
+                                    type="tel"
+                                    id="contactPhone"
+                                    name="celular"
+                                    placeholder="Celular"
+                                    autocomplete="tel"
+                                    inputmode="tel"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="contactSubject">Asunto</label>
+                                <input
+                                    type="text"
+                                    id="contactSubject"
+                                    name="asunto"
+                                    placeholder="Asunto"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="contactMessage">Mensaje</label>
+                            <textarea
+                                id="contactMessage"
+                                name="mensaje"
+                                placeholder="Cuéntanos qué necesitas"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit">
+                            Enviar mensaje
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+
+                        <p class="form-privacy-message">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                            Tus datos serán utilizados únicamente para atender tu solicitud.
+                        </p>
+                    </form>
+                </article>
+            </div>
+
+            <div class="direct-contact-area">
+                <div class="direct-contact-heading">
+                    <span>Atención directa</span>
+                    <h2>¿Prefieres comunicarte directamente?</h2>
+                </div>
+
+                <div class="direct-contact-grid">
+                    <a href="tel:+5111234567" class="direct-contact-card">
+                        <span><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                        <div>
+                            <small>Llámanos</small>
+                            <strong>(01) 123 4567</strong>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://wa.me/51987654321"
+                        class="direct-contact-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+                        <div>
+                            <small>WhatsApp</small>
+                            <strong>987 654 321</strong>
+                        </div>
+                    </a>
+
+                    <a
+                        href="mailto:info@interconexionworld.com"
+                        class="direct-contact-card"
+                    >
+                        <span><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                        <div>
+                            <small>Escríbenos</small>
+                            <strong>info@interconexionworld.com</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand-row">
+                <a href="#inicio" class="footer-brand" aria-label="Volver al inicio">
+                    <img
+                        src="assets/images/logo.png"
+                        alt="Interconexión World"
+                        class="footer-logo"
+                    >
+                </a>
+
+                <p>Internet rápido, estable y confiable para tu hogar.</p>
+            </div>
+
+            <div class="footer-columns">
+                <section class="footer-column">
+                    <div class="footer-column-title">
+                        <span>
+                            <i class="fa-regular fa-user" aria-hidden="true"></i>
+                        </span>
+                        <h3>Información de abonados</h3>
+                    </div>
+
+                    <nav class="footer-links" aria-label="Información de abonados">
+                        <a href="reclamaciones.html">
+                            <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+                            <span>¿Cómo reclamar?</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                            <span>Condiciones de uso</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-regular fa-credit-card" aria-hidden="true"></i>
+                            <span>Medios de pago</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-wifi" aria-hidden="true"></i>
+                            <span>Política de uso de internet</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-cookie-bite" aria-hidden="true"></i>
+                            <span>Política de cookies</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </section>
+
+                <section class="footer-column">
+                    <div class="footer-column-title">
+                        <span>
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        </span>
+                        <h3>Tus derechos</h3>
+                    </div>
+
+                    <nav class="footer-links" aria-label="Tus derechos">
+                        <a href="#">
+                            <i class="fa-solid fa-user-shield" aria-hidden="true"></i>
+                            <span>Política de privacidad</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                            <span>Términos y condiciones</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="reclamaciones.html">
+                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                            <span>Libro de reclamaciones</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+                            <span>Canal de denuncias</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>
+                            <span>Devolución por interrupciones</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                    </nav>
+                </section>
+
+                <section class="footer-column">
+                    <div class="footer-column-title">
+                        <span>
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        </span>
+                        <h3>Atención y empresa</h3>
+                    </div>
+
+                    <div class="footer-company-data">
+                        <a href="tel:+5111234567">
+                            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <span><strong>Teléfono:</strong> (01) 123 4567</span>
+                        </a>
+
+                        <a href="mailto:info@interconexionworld.com">
+                            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                            <span>
+                                <strong>Correo:</strong>
+                                info@interconexionworld.com
+                            </span>
+                        </a>
+
+                        <div>
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <span>
+                                <strong>Dirección:</strong>
+                                Av. Conexión 123, Lima – Perú
+                            </span>
+                        </div>
+
+                        <div>
+                            <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                            <span>
+                                <strong>Horario:</strong>
+                                Lun. – Sáb.: 8:00 a.m. – 8:00 p.m.
+                            </span>
+                        </div>
+
+                        <a href="nosotros.html">
+                            <i class="fa-regular fa-building" aria-hidden="true"></i>
+                            <span>Sobre nosotros</span>
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer-navigation">
+                <nav class="footer-menu" aria-label="Navegación del pie de página">
+                    <a href="#inicio">
+                        <i class="fa-solid fa-house" aria-hidden="true"></i>
+                        Inicio
+                    </a>
+
+                    <a href="nosotros.html">
+                        <i class="fa-regular fa-user" aria-hidden="true"></i>
+                        Sobre nosotros
+                    </a>
+
+                    <a href="preguntas.html">
+                        <i class="fa-regular fa-circle-question" aria-hidden="true"></i>
+                        Preguntas frecuentes
+                    </a>
+
+                    <a href="reclamaciones.html">
+                        <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                        Libro de reclamaciones
+                    </a>
+                </nav>
+
+                <div class="footer-social">
+                    <span>Síguenos:</span>
+
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Interconexión World</p>
+            <span aria-hidden="true"></span>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
